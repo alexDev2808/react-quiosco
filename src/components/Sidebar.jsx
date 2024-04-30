@@ -1,4 +1,4 @@
-
+import { categorias } from "../data/categorias"
 
 export default function Sidebar() {
   return (
@@ -10,7 +10,12 @@ export default function Sidebar() {
             />
         </div>
 
-        
+        <div className="mt-10">
+            {categorias.map( categoria => (
+                <p>{categoria.nombre}</p>
+            ))}
+        </div>
+
     </aside>
   )
 }
