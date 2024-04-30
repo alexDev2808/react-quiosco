@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export default function Registro() {
   return (
@@ -75,6 +76,10 @@ export default function Registro() {
             className="bg-indigo-600 hover:bg-indigo-800 text-white w-full mt-5 p-3 font-bold cursor-pointer"
           />
         </form>
+
+        <nav className="mt-5">
+          <p>Ya tienes cuenta? <Link to="/auth/login">Inicia Sesion</Link></p>
+        </nav>
 
       </div>
     </>
